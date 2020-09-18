@@ -74,6 +74,7 @@ public class Test {
 //        StringBuilder s = new StringBuilder(String.valueOf(data));
 //        String ss = s.reverse().toString();
 //
+       // dibil
 //
 //        return Integer.parseInt(ss);
     }
