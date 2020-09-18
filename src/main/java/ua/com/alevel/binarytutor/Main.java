@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Test test = new Test();
-        test.ar();
+        int reverse = test.reverse(187309857);
+        System.out.println("reverse = " + reverse);
     }
 }

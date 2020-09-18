@@ -2,6 +2,8 @@ package ua.com.alevel.binarytutor.test;
 
 import ua.com.alevel.binarytutor.ConvertUtil;
 
+import java.util.ArrayList;
+
 public class Test {
 
     public void algebra() {
@@ -44,5 +46,35 @@ public class Test {
         System.out.println("a << 1 = " + (a << 1));
         System.out.println("a / 2 = " + a / 2);
         System.out.println("a >> 1 = " + (a >> 1));
+    }
+
+    public int reverse(int data) {
+        int result = 0;
+        boolean end = true;
+        ArrayList<Integer> integers = new ArrayList<>();
+        do {
+            if (data / 10 < 1) {
+                end = false;
+            } else {
+                int mod = data % 10;
+                data = data - mod;
+                data = data / 10;
+                integers.add(mod);
+            }
+        } while (end);
+        int reverse = 0;
+        if (integers.size() != 0) {
+            result = (int) (integers.get(integers.size() - 1) * Math.pow(10, integers.size()));
+            for (Integer integer : integers) {
+
+            }
+        }
+
+        return result;
+//        StringBuilder s = new StringBuilder(String.valueOf(data));
+//        String ss = s.reverse().toString();
+//
+//
+//        return Integer.parseInt(ss);
     }
 }
